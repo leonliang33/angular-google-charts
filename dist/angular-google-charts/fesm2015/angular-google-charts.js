@@ -240,7 +240,9 @@ class RawChartComponent {
      * @return {?}
      */
     clearChart() {
-        this.wrapper.getChart().clearChart();
+        if (this.wrapper) {
+            this.wrapper.getChart().clearChart();
+        }
     }
     /**
      * @protected
