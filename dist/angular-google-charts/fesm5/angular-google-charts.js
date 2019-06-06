@@ -283,9 +283,7 @@ var RawChartComponent = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        if (this.wrapper) {
-            this.wrapper.getChart().clearChart();
-        }
+        this.wrapper && this.wrapper.getChart() && this.wrapper.getChart().clearChart();
     };
     /**
      * @protected
